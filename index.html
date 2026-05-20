@@ -3,66 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compare Demo</title>
+  <title>Watermark / Sticker / Doodle Remove Compare</title>
 
   <style>
-    body {
-      margin: 0;
-      padding: 24px;
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
+    body{
+      background:#0f0f0f;
+      color:white;
+      font-family:Arial, sans-serif;
+      margin:0;
+      padding:24px;
     }
 
-    h1 {
-      margin-bottom: 24px;
+    h1{
+      margin-bottom:24px;
+      font-size:42px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .section-title{
+      font-size:32px;
+      margin:50px 0 20px;
+      font-weight:bold;
     }
 
-    th {
-      position: sticky;
-      top: 0;
-      background: #1e1e1e;
-      padding: 12px;
-      font-size: 18px;
-      border: 1px solid #333;
-      z-index: 10;
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-bottom:60px;
     }
 
-    td {
-      border: 1px solid #333;
-      padding: 12px;
-      text-align: center;
-      vertical-align: top;
-      background: #181818;
+    th, td{
+      border:1px solid #333;
+      padding:12px;
+      text-align:center;
+      vertical-align:top;
     }
 
-    img {
-      width: 220px;
-      border-radius: 10px;
-      transition: 0.2s ease;
-      cursor: pointer;
+    th{
+      background:#1b1b1b;
+      font-size:22px;
+      position:sticky;
+      top:0;
+      z-index:10;
     }
 
-    img:hover {
-      transform: scale(1.03);
+    td.label{
+      font-size:20px;
+      font-weight:bold;
+      background:#161616;
+      min-width:180px;
     }
 
-    .case-name {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 12px;
-      text-align: left;
+    img{
+      width:260px;
+      border-radius:10px;
+      background:#222;
+      transition:0.2s;
+      cursor:pointer;
     }
 
-    .row-separator td {
-      padding-top: 24px;
-      background: transparent;
-      border: none;
+    img:hover{
+      transform:scale(1.03);
     }
   </style>
 </head>
@@ -71,135 +71,202 @@
 
 <h1>Watermark / Sticker / Doodle Remove Compare</h1>
 
+<!-- DRAW -->
+
+<div class="section-title">Draw / Doodle</div>
+
+<table>
+<tr>
+<th>Case</th>
+<th>Input</th>
+<th>Mask</th>
+<th>3.0</th>
+<th>Qwen</th>
+<th>4.0</th>
+</tr>
+
+<tr>
+<td class="label">draw1</td>
+<td><img src="draw1 input.jpg"></td>
+<td><img src="draw1 mask.webp"></td>
+<td><img src="draw1 3.0.webp"></td>
+<td><img src="draw1 qwen.webp"></td>
+<td><img src="draw1 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw2</td>
+<td><img src="draw2 input.jpg"></td>
+<td><img src="draw2 mask.webp"></td>
+<td><img src="draw2 3.0.webp"></td>
+<td><img src="draw2 qwen.webp"></td>
+<td><img src="draw2 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw3</td>
+<td><img src="draw3 input.jpg"></td>
+<td><img src="draw3 mask.webp"></td>
+<td><img src="draw3 3.0.webp"></td>
+<td><img src="draw3 qwen.webp"></td>
+<td><img src="draw3 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw4</td>
+<td><img src="draw4 input.jpg"></td>
+<td><img src="draw4 mask.webp"></td>
+<td><img src="draw4 3.0.webp"></td>
+<td><img src="draw4 qwen.webp"></td>
+<td><img src="draw4 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw5</td>
+<td><img src="draw5 input.jpg"></td>
+<td><img src="draw5 mask.webp"></td>
+<td><img src="draw5 3.0.webp"></td>
+<td><img src="draw5 qwen.webp"></td>
+<td><img src="draw5 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw6</td>
+<td><img src="draw6 input.jpg"></td>
+<td><img src="draw6 mask.webp"></td>
+<td><img src="draw6 3.0.webp"></td>
+<td><img src="draw6 qwen.webp"></td>
+<td><img src="draw6 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw7</td>
+<td><img src="draw7 input.jpg"></td>
+<td><img src="draw7 mask.webp"></td>
+<td><img src="draw7 3.0.webp"></td>
+<td><img src="draw7 qwen.webp"></td>
+<td><img src="draw7 4.0.webp"></td>
+</tr>
+
+<tr>
+<td class="label">draw8</td>
+<td><img src="draw8 input.jpg"></td>
+<td><img src="draw8 mask.webp"></td>
+<td><img src="draw8 3.0.webp"></td>
+<td><img src="draw8 qwen.webp"></td>
+<td><img src="draw8 4.0.webp"></td>
+</tr>
+
+</table>
+
+<!-- STICKER -->
+
+<div class="section-title">Sticker</div>
+
 <table>
 
-  <tr>
-    <th>Input</th>
-    <th>Mask</th>
-    <th>3.0</th>
-    <th>4.0</th>
-    <th>Qwen</th>
-  </tr>
+<tr>
+<th>Case</th>
+<th>Input</th>
+<th>Mask</th>
+<th>3.0</th>
+<th>Qwen</th>
+<th>4.0</th>
+</tr>
 
-  <!-- DRAW 1 -->
-  <tr>
-    <td>
-      <div class="case-name">draw1</div>
-      <img src="./draw1_input.jpg">
-    </td>
+<tr><td class="label">sticker1</td><td><img src="sticker1 input.jpg"></td><td><img src="sticker1 mask.webp"></td><td><img src="sticker1 3.0.webp"></td><td><img src="sticker1 qwen.webp"></td><td><img src="sticker1 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw1_mask.webp">
-    </td>
+<tr><td class="label">sticker2</td><td><img src="sticker2 input.jpg"></td><td><img src="sticker2 mask.webp"></td><td><img src="sticker2 3.0.webp"></td><td><img src="sticker2 qwen.webp"></td><td><img src="sticker2 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw1_3.0.webp">
-    </td>
+<tr><td class="label">sticker3</td><td><img src="sticker3 input.jpg"></td><td><img src="sticker3 mask.webp"></td><td><img src="sticker3 3.0.webp"></td><td><img src="sticker3 qwen.webp"></td><td><img src="sticker3 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw1_4.0.webp">
-    </td>
+<tr><td class="label">sticker4</td><td><img src="sticker4 input.jpg"></td><td><img src="sticker4 mask.webp"></td><td><img src="sticker4 3.0.webp"></td><td><img src="sticker4 qwen.webp"></td><td><img src="sticker4 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw1_qwen.webp">
-    </td>
-  </tr>
+<tr><td class="label">sticker5</td><td><img src="sticker5 input.jpg"></td><td><img src="sticker5 mask.webp"></td><td><img src="sticker5 3.0.webp"></td><td><img src="sticker5 qwen.webp"></td><td><img src="sticker5 4.0.webp"></td></tr>
 
-  <!-- DRAW 2 -->
-  <tr>
-    <td>
-      <div class="case-name">draw2</div>
-      <img src="./draw2_input.jpg">
-    </td>
+<tr><td class="label">sticker6</td><td><img src="sticker6 input.jpg"></td><td><img src="sticker6 mask.webp"></td><td><img src="sticker6 3.0.webp"></td><td><img src="sticker6 qwen.webp"></td><td><img src="sticker6 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw2_mask.webp">
-    </td>
+<tr><td class="label">sticker7</td><td><img src="sticker7 input.jpg"></td><td><img src="sticker7 mask.webp"></td><td><img src="sticker7 3.0.webp"></td><td><img src="sticker7 qwen.webp"></td><td><img src="sticker7 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw2_3.0.webp">
-    </td>
+<tr><td class="label">sticker8</td><td><img src="sticker8 input.jpg"></td><td><img src="sticker8 mask.webp"></td><td><img src="sticker8 3.0.webp"></td><td><img src="sticker8 qwen.webp"></td><td><img src="sticker8 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw2_4.0.webp">
-    </td>
+<tr><td class="label">sticker9</td><td><img src="sticker9 input.jpg"></td><td><img src="sticker9 mask.webp"></td><td><img src="sticker9 3.0.webp"></td><td><img src="sticker9 qwen.webp"></td><td><img src="sticker9 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw2_qwen.webp">
-    </td>
-  </tr>
+<tr><td class="label">sticker10</td><td><img src="sticker10 input.jpg"></td><td><img src="sticker10 mask.webp"></td><td><img src="sticker10 3.0.webp"></td><td><img src="sticker10 qwen.webp"></td><td><img src="sticker10 4.0.webp"></td></tr>
 
-  <!-- DRAW 3 -->
-  <tr>
-    <td>
-      <div class="case-name">draw3</div>
-      <img src="./draw3_input.jpg">
-    </td>
+<tr><td class="label">sticker11</td><td><img src="sticker11 input.png"></td><td>—</td><td><img src="sticker11 3.01.webp"></td><td><img src="sticker11 qwen.webp"></td><td><img src="sticker11 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw3_mask.webp">
-    </td>
+<tr><td class="label">sticker12</td><td><img src="sticker12 input.jpg"></td><td><img src="sticker12 mask.webp"></td><td><img src="sticker12 3.0.webp"></td><td><img src="sticker12 qwen.webp"></td><td><img src="sticker12 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw3_3.0.webp">
-    </td>
+<tr><td class="label">sticker13</td><td><img src="sticker13 input.png"></td><td><img src="sticker13 mask.webp"></td><td><img src="sticker13 3.0.webp"></td><td><img src="sticker13 qwen.webp"></td><td><img src="sticker13 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw3_4.0.webp">
-    </td>
+</table>
 
-    <td>
-      <img src="./draw3_qwen.webp">
-    </td>
-  </tr>
+<!-- TYPOGRAPHY -->
 
-  <!-- DRAW 4 -->
-  <tr>
-    <td>
-      <div class="case-name">draw4</div>
-      <img src="./draw4_input.jpg">
-    </td>
+<div class="section-title">Typography / Watermark</div>
 
-    <td>
-      <img src="./draw4_mask.webp">
-    </td>
+<table>
 
-    <td>
-      <img src="./draw4_3.0.webp">
-    </td>
+<tr>
+<th>Case</th>
+<th>Input</th>
+<th>Mask</th>
+<th>3.0</th>
+<th>Qwen</th>
+<th>4.0</th>
+</tr>
 
-    <td>
-      <img src="./draw4_4.0.webp">
-    </td>
+<tr><td class="label">typography1</td><td><img src="typography1 input.jpg"></td><td><img src="typography1 mask.webp"></td><td><img src="typography1 3.0.webp"></td><td><img src="typography1 qwen.webp"></td><td><img src="typography1 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw4_qwen.webp">
-    </td>
-  </tr>
+<tr><td class="label">typography2</td><td><img src="typography2 input.jpg"></td><td><img src="typography2 mask.webp"></td><td><img src="typography2 3.0.webp"></td><td><img src="typography2 qwen.webp"></td><td><img src="typography2 4.0.webp"></td></tr>
 
-  <!-- DRAW 5 -->
-  <tr>
-    <td>
-      <div class="case-name">draw5</div>
-      <img src="./draw5_input.jpg">
-    </td>
+<tr><td class="label">typography3</td><td><img src="typography3 input.jpg"></td><td><img src="typography3 mask.webp"></td><td><img src="typography3 3.0.webp"></td><td><img src="typography3 qwen.webp"></td><td><img src="typography3 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw5_mask.webp">
-    </td>
+<tr><td class="label">typography4</td><td><img src="typography4.jpg"></td><td><img src="typography4 mask.webp"></td><td><img src="typography4 3.0.webp"></td><td><img src="typography4 qwen.webp"></td><td><img src="typography4 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw5_3.0.webp">
-    </td>
+<tr><td class="label">typography5</td><td><img src="typography5 input.jpg"></td><td><img src="typography5 mask.webp"></td><td><img src="typography5 3.0.webp"></td><td><img src="typography5 qwen.webp"></td><td><img src="typography5 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw5_4.0.webp">
-    </td>
+<tr><td class="label">typography6</td><td><img src="typography6 input.jpg"></td><td><img src="typography6 mask.webp"></td><td><img src="typography6 3.0.webp"></td><td><img src="typography6 qwen.webp"></td><td><img src="typography6 4.0.webp"></td></tr>
 
-    <td>
-      <img src="./draw5_qwen.webp">
-    </td>
-  </tr>
+<tr><td class="label">typography6(2)</td><td><img src="typography6(2) input.png"></td><td><img src="typography6(2) mask.webp"></td><td><img src="typography6(2) 3.0.webp"></td><td><img src="typography6(2) qwen.webp"></td><td><img src="typography6(2) 4.0.webp"></td></tr>
+
+<tr><td class="label">typography7</td><td><img src="typography7 input.jpg"></td><td><img src="typography7 mask.webp"></td><td><img src="typography7 3.0.webp"></td><td><img src="typography7 qwen.webp"></td><td><img src="typography7 4.0.webp"></td></tr>
+
+</table>
+
+<!-- IMAGE -->
+
+<div class="section-title">Image / Watermark</div>
+
+<table>
+
+<tr>
+<th>Case</th>
+<th>Input</th>
+<th>Mask</th>
+<th>3.0</th>
+<th>Qwen</th>
+<th>4.0</th>
+</tr>
+
+<tr><td class="label">image2(1)</td><td><img src="image2 (1) input.jpg"></td><td><img src="image2 (1) mask.webp"></td><td><img src="image2 (1) 3.0.webp"></td><td><img src="image2 (1) qwen.webp"></td><td><img src="image2 (1) 4.0.webp"></td></tr>
+
+<tr><td class="label">image2(2)</td><td><img src="image2 (2) input.jpg"></td><td><img src="image2 (2) mask.webp"></td><td><img src="image2 (2) 3.0.webp"></td><td><img src="image2 (2) qwen.webp"></td><td><img src="image2 (2) 4.0.webp"></td></tr>
+
+<tr><td class="label">image3(1)</td><td><img src="image3 (1) input.jpg"></td><td><img src="image3 (1) mask.webp"></td><td><img src="image3 (1) 3.0.webp"></td><td><img src="image3 (1) qwen.webp"></td><td><img src="image3 (1) 4.0.webp"></td></tr>
+
+<tr><td class="label">image4</td><td><img src="image4 input.png"></td><td><img src="image4 mask.webp"></td><td><img src="image4 3.0.webp"></td><td><img src="image4 qwen.webp"></td><td><img src="image4 4.0.webp"></td></tr>
+
+<tr><td class="label">image5</td><td><img src="image5 input.jpeg"></td><td><img src="image5 mask.webp"></td><td><img src="image5 3.0.webp"></td><td><img src="image5 qwen.webp"></td><td><img src="image5 4.0.webp"></td></tr>
+
+<tr><td class="label">image6</td><td><img src="image6 input.jpeg"></td><td><img src="image6 mask.webp"></td><td><img src="image6 3.0.webp"></td><td><img src="image6 qwen.webp"></td><td><img src="image6 4.0.webp"></td></tr>
+
+<tr><td class="label">image7</td><td><img src="image7 input.jpg"></td><td><img src="image7 mask.webp"></td><td><img src="image7 3.0.webp"></td><td><img src="image7 qwen.webp"></td><td><img src="image7 4.0.webp"></td></tr>
+
+<tr><td class="label">image8</td><td><img src="image8 input.jpg"></td><td><img src="image8 mask.webp"></td><td><img src="image8 3.0.webp"></td><td><img src="image8 qwen.webp"></td><td><img src="image8 4.0.webp"></td></tr>
+
+<tr><td class="label">image9</td><td><img src="image9 input.jpg"></td><td><img src="image9 mask.webp"></td><td><img src="image9 3.0.webp"></td><td><img src="image9 qwen.webp"></td><td><img src="image9 4.0.webp"></td></tr>
 
 </table>
 
