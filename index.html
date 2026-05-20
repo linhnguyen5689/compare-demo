@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: #1e1e1e;
+      padding: 12px;
+      font-size: 18px;
+      border: 1px solid #333;
+      z-index: 10;
+    }
+
+    td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: center;
+      vertical-align: top;
+      background: #181818;
+    }
+
+    img {
+      width: 220px;
+      border-radius: 10px;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .case-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .row-separator td {
+      padding-top: 24px;
+      background: transparent;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Watermark / Sticker / Doodle Remove Compare</h1>
+
+<table>
+
+  <tr>
+    <th>Input</th>
+    <th>Mask</th>
+    <th>3.0</th>
+    <th>4.0</th>
+    <th>Qwen</th>
+  </tr>
+
+  <!-- DRAW 1 -->
+  <tr>
+    <td>
+      <div class="case-name">draw1</div>
+      <img src="./draw1_input.jpg">
+    </td>
+
+    <td>
+      <img src="./draw1_mask.webp">
+    </td>
+
+    <td>
+      <img src="./draw1_3.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw1_4.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw1_qwen.webp">
+    </td>
+  </tr>
+
+  <!-- DRAW 2 -->
+  <tr>
+    <td>
+      <div class="case-name">draw2</div>
+      <img src="./draw2_input.jpg">
+    </td>
+
+    <td>
+      <img src="./draw2_mask.webp">
+    </td>
+
+    <td>
+      <img src="./draw2_3.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw2_4.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw2_qwen.webp">
+    </td>
+  </tr>
+
+  <!-- DRAW 3 -->
+  <tr>
+    <td>
+      <div class="case-name">draw3</div>
+      <img src="./draw3_input.jpg">
+    </td>
+
+    <td>
+      <img src="./draw3_mask.webp">
+    </td>
+
+    <td>
+      <img src="./draw3_3.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw3_4.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw3_qwen.webp">
+    </td>
+  </tr>
+
+  <!-- DRAW 4 -->
+  <tr>
+    <td>
+      <div class="case-name">draw4</div>
+      <img src="./draw4_input.jpg">
+    </td>
+
+    <td>
+      <img src="./draw4_mask.webp">
+    </td>
+
+    <td>
+      <img src="./draw4_3.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw4_4.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw4_qwen.webp">
+    </td>
+  </tr>
+
+  <!-- DRAW 5 -->
+  <tr>
+    <td>
+      <div class="case-name">draw5</div>
+      <img src="./draw5_input.jpg">
+    </td>
+
+    <td>
+      <img src="./draw5_mask.webp">
+    </td>
+
+    <td>
+      <img src="./draw5_3.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw5_4.0.webp">
+    </td>
+
+    <td>
+      <img src="./draw5_qwen.webp">
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
